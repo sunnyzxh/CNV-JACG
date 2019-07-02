@@ -6,13 +6,13 @@ CNV-JACG is written in perl and R
 
 Just make sure you have already installed perl(v5.22.0) and R(3.5.1)
 
-### Required perl model
+### Required perl models
 Statistics::Basic (https://metacpan.org/pod/distribution/Statistics-Basic/lib/Statistics/Basic.pod)
 
 Bio::DB::HTS (https://github.com/Ensembl/Bio-DB-HTS)
 
 Bio::DB::HTS::Tabix (https://metacpan.org/pod/Bio::DB::HTS::Tabix)
-### Required R packages
+### Required R package
 randomForest (https://cran.r-project.org/web/packages/randomForest/randomForest.pdf)
 ### Other required program
 Bedtools(v2.25.0)
