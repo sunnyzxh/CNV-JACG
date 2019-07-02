@@ -18,11 +18,11 @@ Samtools(1.3.1)
 ## Usage
 Please prepare
 
-1,tab-separated file containg the coordinates of putative CNVs, "Chr\tStart\tEnd\tDEL/DUP\tother" ($inputCNV)
+1, tab-separated file containg the coordinates of putative CNVs, "Chr\tStart\tEnd\tDEL/DUP\tother" ($inputCNV)
 
-2,the vcf file (optional) ($vcf)
+2, the vcf file (optional) ($vcf)
 
-3,the bam file ($bam)
+3, the bam file ($bam)
 
 ### Step1: Get the probability of the hetrozygosity of putative CNVs given the common SNPs from 1000 Genomes Project
 perl geno.pl
@@ -66,15 +66,17 @@ the output of this step is $inputCNV.depth.gc
 ### Step4: Get other features and assessment result
 perl CNV-JACG.clear.pl
 
--sample <String>    The sample name;
+Options
 
--precnv <String>    The coordinates of to-be-assessed CNVs "Chr\tStart\tEnd\tDEL/DUP\tCalled_by";
+    -sample <String>    The sample name;
 
--vcf    <String>    The vcf file;
+    -precnv <String>    The coordinates of to-be-assessed CNVs "Chr\tStart\tEnd\tDEL/DUP\tCalled_by";
 
--outdir <String>    The output dir;
+    -vcf    <String>    The vcf file;
 
--bam    <String>    The bam file;
+    -outdir <String>    The output dir;
+
+    -bam    <String>    The bam file;
 
 the output of this step includes
 
