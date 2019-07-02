@@ -94,5 +94,5 @@ the output of this step includes
 2, The prefix of the the file $inputCNV should keep the same in all four steps.
 
 # Support
-Please feel free to contanct sunnyzxh@connect.hku.hk should you have any question
+Should you have any question, please feel free to contanct sunnyzxh@connect.hku.hk 
 
