@@ -8,6 +8,10 @@ Just make sure you have already installed perl(v5.22.0) and R(3.5.1)
 
 ### Required perl model
 Statistics::Basic (https://metacpan.org/pod/distribution/Statistics-Basic/lib/Statistics/Basic.pod)
+
+Bio::DB::HTS (https://github.com/Ensembl/Bio-DB-HTS)
+
+Bio::DB::HTS::Tabix (https://metacpan.org/pod/Bio::DB::HTS::Tabix)
 ### Required R packages
 randomForest (https://cran.r-project.org/web/packages/randomForest/randomForest.pdf)
 ### Other required program
