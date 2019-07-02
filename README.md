@@ -1,10 +1,10 @@
 # CNV-JACG
-CNV-JACG is a random forest based framework for assessing the accuracy of CNVs detected based on paired-end whole genome sequencing data
+CNV-JACG is a random forest based framework for assessing the accuracy of CNVs detected base on paired-end whole genome sequencing data
 
 ## Installation
 CNV-JACG is written in perl and R
 
-just make sure you have already install perl(v5.22.0) and R(3.5.1)
+Just make sure you have already installed perl(v5.22.0) and R(3.5.1)
 
 ### Required perl model
 Statistics::Basic (https://metacpan.org/pod/distribution/Statistics-Basic/lib/Statistics/Basic.pod)
@@ -18,13 +18,13 @@ Samtools(1.3.1)
 ## Usage
 Please prepare
 
-1, tab-separated file containg the coordinates of putative CNVs, "Chr\tStart\tEnd\tDEL/DUP\tother" ($inputCNV)
+1, The tab-separated file containg the coordinates of putative CNVs, "Chr\tStart\tEnd\tDEL/DUP\tother" ($inputCNV)
 
-2, the vcf file (optional) ($vcf)
+2, The vcf file (optional) ($vcf)
 
-3, the bam file ($bam)
+3, The bam file ($bam)
 
-### Step1: Get the probability of the hetrozygosity of putative CNVs given the common SNPs from 1000 Genomes Project
+### Step1: Get the probability of the heterozygosity of putative CNV regions given the common SNPs from the 1000 Genomes Project
 perl geno.pl
 
 Function
@@ -55,15 +55,15 @@ Options
     
     -o|-outfile       [s]   outfile
 
-### Step2: Get the overlapping with repeat region
+### Step2: Get the overlapping of putative CNV regions with repeat region
 bedtools intersect -wao -a $inputCNV -b Repeat/SD_N_region_RepeatMasker_SimpleRepeat_merge.bed Repeat/N_region > $inputCNV.repeat
 
-### Step3: Get the depth and GC of putative CNV regions
+### Step3: Get the depth and GC content of putative CNV regions
 perl get_depth_gc_samtools.pl $bam $inputCNV
 
-the output of this step is $inputCNV.depth.gc
+The output of this step is $inputCNV.depth.gc
 
-### Step4: Get other features and assessment result
+### Step4: Get other features and assessment results
 perl CNV-JACG.clear.pl
 
 Options
