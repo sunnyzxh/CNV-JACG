@@ -25,7 +25,3 @@ run the changed script
 
 
 PLEASE feel free to contact sunnyzxh@connect.hku.hk should you have any questions!
-
-To do list:
-1) Add Merge program
-2) Population level
