@@ -30,7 +30,20 @@ it indicates the failure of installing the package.
 
 ***
 ### Installing
-Download CNV-JACG.tar.gz from 
+Download ZIP https://github.com/sunnyzxh/CNV-JACG/archive/master.zip 
+    
+    unzip CNV-JACG-master.zip
+    cd CNV-JACG-master
+
+#### Running the test
+    cd bin
+    chmod 777 samtools
+    chmod 777 bedtools
+    cd ../example
+    sh test.sh
+    cd test.result
+    
+there should be 5 files under test.result
 
 ### Usage
 Please prepare
