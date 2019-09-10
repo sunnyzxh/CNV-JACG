@@ -29,8 +29,8 @@ it indicates the failure of installing the package.
 
 ***
 ### Installing
-Download ZIP https://github.com/sunnyzxh/CNV-JACG/archive/master.zip 
     
+    wget https://github.com/sunnyzxh/CNV-JACG/archive/master.zip
     unzip CNV-JACG-master.zip
     cd CNV-JACG-master
 
