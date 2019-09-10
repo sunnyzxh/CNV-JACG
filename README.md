@@ -8,25 +8,25 @@ CNV-JACG is written in perl and R
 ### Prerequisites
 
 #### perl(v5.22.0) and following perl models
-Statistics::Basic (https://metacpan.org/pod/distribution/Statistics-Basic/lib/Statistics/Basic.pod)
+* Statistics::Basic (https://metacpan.org/pod/distribution/Statistics-Basic/lib/Statistics/Basic.pod)
 
-Bio::DB::HTS (https://github.com/Ensembl/Bio-DB-HTS)
+- Bio::DB::HTS (https://github.com/Ensembl/Bio-DB-HTS)
 
-Bio::DB::HTS::Tabix (https://metacpan.org/pod/Bio::DB::HTS::Tabix)
+* Bio::DB::HTS::Tabix (https://metacpan.org/pod/Bio::DB::HTS::Tabix)
 
 If you encounter error like "perl: symbol lookup error: */perl5/lib/perl5/x86_64-linux-thread-multi//auto/Clone/Clone.so: undefined symbol: Perl_xs_handshake"
 it means the last two packages were not successfully installed in your current used perl.
 
 #### R(3.5.1) and the following R package
-randomForest (https://cran.r-project.org/web/packages/randomForest/randomForest.pdf)
+* randomForest (https://cran.r-project.org/web/packages/randomForest/randomForest.pdf)
 
 If you encounter error "Error in library(randomForest) : there is no package called 'randomForest' Execution halted"
 it indicates the failure of installing the package.
 
-#### Other required software
-Bedtools(v2.25.0)
+#### Other required softwares
+* Bedtools(v2.25.0)
 
-Samtools(1.3.1)
+- Samtools(1.3.1)
 
 ***
 ### Installing
