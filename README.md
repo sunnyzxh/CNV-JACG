@@ -44,7 +44,7 @@ it indicates the failure of installing the package.
     
 If "ALL JOBS RUN SUCCESSFULLY!", there should be 5 files under test.result
 
-Note: Since it is a demo, and due to the file size limitation of Github, we only provide a small partial of the following files. For you real data, you need to replace/supply the following files to the genome-wide. You could also contact sunnyzxh@connect.hku.hk to send you the whold files if you can't find the files youself.
+Note: Since it is a demo, and due to the file size limitation of Github, we only provide a small partial of the following files. For you real data, you need to replace/supply the following files to the genome-wide. You could also contact sunnyzxh@connect.hku.hk to send you the whole files if you can't find the files youself.
 
 * human reference genome (hg19)
 - maf > 5% SNPs from 1000 Genomes Project
