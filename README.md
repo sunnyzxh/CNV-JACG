@@ -1,7 +1,6 @@
 # CNV-JACG
 CNV-JACG is a random forest based framework for assessing the accuracy of CNVs detected base on paired-end whole genome sequencing data
 
-***
 ## Getting Started
 CNV-JACG is written in perl and R
 
