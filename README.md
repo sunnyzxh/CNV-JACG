@@ -55,9 +55,9 @@ Note: Since it is a demo, and due to the file size limitation of Github, we only
 ### Usage
 #### Please prepare the following inputs
 
-* The tab-separated file containg the coordinates of putative CNVs, "Chr\tStart\tEnd\tDEL/DUP\tother" ($inputCNV)
+* The tab-separated file containg the coordinates of putative CNVs, "Chr\tStart\tEnd\tDEL/DUP\tother" ($preCNV)
 
-- The bam file ($bam)
+- The bam file
 
 Note: 
 * Please **DO NOT** mix Deletion and Duplication within a file, it will lead to using deletion classifier to predict duplication, and vice versa. 
