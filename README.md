@@ -31,7 +31,7 @@ it indicates the failure of installing the package.
 ### Installing
     
     wget https://github.com/sunnyzxh/CNV-JACG/archive/master.zip
-    unzip CNV-JACG-master.zip
+    unzip master.zip
     cd CNV-JACG-master
 
 #### Running the test
