@@ -33,7 +33,7 @@ my $precnvbase = basename($precnv);
 
 # Calculate het probability
 &showLog("Calculating het probability...");
-`/home/yerui/miniconda2/bin/perl $home/bin/Het-prob.pl -f $ref -m $snps -r $precnv -i $bam -o $outdir/$precnvbase.het.prob`;
+`perl $home/bin/Het-prob.pl -f $ref -m $snps -r $precnv -i $bam -o $outdir/$precnvbase.het.prob`;
 my $hetprob = "$outdir/$precnvbase.het.prob";
 
 # calculate depth in fixed region (for normalization)
@@ -401,6 +401,6 @@ sub orientation_flag {
     sunny@connect.hku.hk
 
 =head1 Version
-    v0.1; 2019-03-12
+    v1.0; 2019-03-12
 
 =cut
