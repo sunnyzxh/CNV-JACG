@@ -16,4 +16,4 @@ dup_classifier = randomForest(Decision ~ ., data=dup, ntree=450, mtry=10, import
 dup_classifier
 saveRDS(dup_classifier, "../lib/trained_model_dup.rds")
 plot(dup_classifier)
-varImpPlot(del_classifier)
+varImpPlot(dup_classifier)
