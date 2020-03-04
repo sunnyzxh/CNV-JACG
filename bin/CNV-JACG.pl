@@ -173,8 +173,12 @@ while (<IN>) {
           if ( $info[5] !~ /[S]/
             or $info[5] !~ /[M]/
             or ( $info[5] =~ tr/[SM]/[SM]/ ) != 2 );
+        my $sainfo;
+        for my $ind ( 10..$#info ) {
+            $sainfo = $info[$ind] if ( $info[$ind] =~ /SA:/ );
+        }
         my ( $cigar2, $chr, $pos, $strand ) =
-          ( split /[:,]/, ( ( split /;/, $info[11] )[0] ) )[ 5, 2, 3, 4 ];
+          ( split /[:,]/, ( ( split /;/, $sainfo )[0] ) )[ 5, 2, 3, 4 ];
         next
           if ( $cigar2 !~ /[S]/
             or $cigar2 !~ /[M]/
