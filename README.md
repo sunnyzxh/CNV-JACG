@@ -6,7 +6,7 @@ CNV-JACG is written in perl and R
 
 ### Prerequisites
 
-#### perl(v5.22.0) and following perl models
+#### perl(v5.18.2) and following perl models
 * Statistics::Basic (https://metacpan.org/pod/distribution/Statistics-Basic/lib/Statistics/Basic.pod)
 
 - Bio::DB::HTS (https://github.com/Ensembl/Bio-DB-HTS)
