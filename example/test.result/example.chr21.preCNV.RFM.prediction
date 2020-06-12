@@ -1,4 +1,0 @@
-Prediction	Chr	Start	End	Left.Repeat	Right.Repeat	Repeat.Pct	Mean.depth	Left.LL.RR	Left.RL	Right.LL.RR	Right.RL	DI	IN	Left.SCR	Right.SCR	Left.Right.SCR	Left.SCR.cluster	Right.SCR.cluster	Microhomo	GC	Length	Common_SNP	Het_SNP	Het_Prob	Called_by
-True_Del	chr21	25506884	25508030	1	0	0.622	0.004	0	0	0.193	0	1.542	0	0.578	0.867	1.542	1	1	1.253	31.386	1147	0	0	0	CNVnator,Delly,Lumpy,Seeksv
-True_Del	chr21	25710183	25710610	1	1	0.979	0.053	0.096	0	0	0	2.024	0.096	0.578	1.06	2.12	1	1	1.542	37.85	428	0	0	0	CNVnator,Delly,Lumpy,Seeksv
-False_Del	chr21	25763701	25764700	0	0	0.76	1.467	0	0	0.193	0	0	0	0	0	0	0	0	0	26.3	1000	1	0	0	CNVnator
