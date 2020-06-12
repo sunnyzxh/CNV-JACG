@@ -1,4 +1,4 @@
-# CNV-JACG (v1.0)
+# CNV-JACG (v1.1)
 CNV-JACG is a random forest based framework for assessing the accuracy of CNVs detected base on paired-end whole genome sequencing data
 
 ## Getting Started
@@ -57,7 +57,7 @@ Note: Since it is a demo, and due to the file size limitation of Github, we only
 
 * The tab-separated file containg the coordinates of putative CNVs, "Chr\tStart\tEnd\tDEL/DUP\tother" ($preCNV)
 
-- The bam file
+- The bam file(s)
 
 Note: 
 * Please **DO NOT** mix Deletion and Duplication within a file, it will lead to using deletion classifier to predict duplication, and vice versa. 
@@ -73,17 +73,15 @@ Function
 
 Usage
     
-    perl CNV-JACG.pl -s example -p example.precnv -b example.bam -r ref.fa -o out
+    perl CNV-JACG.pl -p example.precnv -b example.bam,example1.bam -r ref.fa -o out
 
 Options
    
     -h|-help            help
     
-    -s|-sample   [s]    sample name
-    
     -p|-precnv   [s]    putative CNVs file (chr,start,end,type(DEL|DUP),other. tab-separated)
     
-    -b|-bam      [s]    bam file
+    -b|-bam      [s]    bam file(s) (for muliple bam files, simply separated by comma <-b bam1,bam2>)
     
     -r|-ref      [s]    reference genome
     
