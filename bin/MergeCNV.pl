@@ -137,7 +137,7 @@ close OUT;
 
 `less $outdir/$sample.$type.overlap |sort -k1,1 -k2,2n > $outdir/$sample.$type.overlap.tmp`;
 
-open IN, "$bedtools intersect -wao -f 0.5 -F 0.5 -a $outdir/$sample.$type.overlap.tmp -b $outdir/$sample.$type.overlap.tmp"|or die $!;
+open IN, "$bedtools intersect -wao -f 0.5 -F 0.5 -a $outdir/$sample.$type.overlap.tmp -b $outdir/$sample.$type.overlap.tmp |" or die $!;
 open OUT, ">$outdir/$sample.$type.overlap";
 my %f_dedup;
 while (<IN>) {
